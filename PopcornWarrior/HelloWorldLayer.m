@@ -9,6 +9,8 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "DailySetupLayer.h"
+#import "GarageSaleLayer.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -42,18 +44,29 @@
 	if( (self=[super init]) ) {
 		
 		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Popcorn Warrior" fontName:@"Helvetica-Bold" fontSize:64];
 
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
 	
 		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
+		label.position =  ccp( size.width /2 , size.height - 50 );
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
 		
+        //10 weekend summer circuit, fair hopping, garage sale bounding and a popcorn popping machine
+        CCMenuItem *newGame = [CCMenuItemFont itemWithString:@"New Game" block:^(id sender){
+            NSLog(@"New game pressed");
+            [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[DailySetupLayer scene] ]];
+
+        }];
 		
+        CCMenu *verticalMenu = [CCMenu menuWithItems:newGame, nil];
+		[verticalMenu setPosition:ccp( size.width/2, size.height/2 )];
+		
+		// Add the menu to the layer
+		[self addChild:verticalMenu];
 		
 		//
 		// Leaderboards and Achievements
@@ -97,10 +110,11 @@
 		CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, nil];
 		
 		[menu alignItemsHorizontallyWithPadding:20];
-		[menu setPosition:ccp( size.width/2, size.height/2 - 50)];
+		[menu setPosition:ccp( size.width/2, size.height/2 - 125)];
 		
 		// Add the menu to the layer
 		[self addChild:menu];
+        
 
 	}
 	return self;

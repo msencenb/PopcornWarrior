@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[Customer initWithSprite:withtag:]:Customer.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GarageSaleLayer nextFrame:]:GarageSaleLayer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sprite.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__23-[DailySetupLayer init]_block_invoke:DailySetupLayer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[_popcornPrice stringValue]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GarageSaleLayer addCustomer:]:GarageSaleLayer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_currentCustomers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0508B1179F9E92007C80CE /* DailySetupLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0508B0179F9E92007C80CE /* DailySetupLayer.m */; };
+		BB8F88D917A390F100D68879 /* Rolling-Hills.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8F88D817A390F100D68879 /* Rolling-Hills.png */; };
+		BB8F88DC17A45F5E00D68879 /* EndOfDayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8F88DB17A45F5E00D68879 /* EndOfDayLayer.m */; };
+		BB93B6681797CB9F004C7B0C /* popcorn_stand.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93B6671797CB9F004C7B0C /* popcorn_stand.png */; };
+		BB93B66C17990038004C7B0C /* main_scene.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93B66B17990038004C7B0C /* main_scene.png */; };
+		BB93B6B4179C6325004C7B0C /* popcorn_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93B6B2179C6325004C7B0C /* popcorn_bubble.png */; };
+		BB93B6B5179C6325004C7B0C /* soda_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93B6B3179C6325004C7B0C /* soda_bubble.png */; };
+		BB93B6B7179C6379004C7B0C /* popcorn_and_soda.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93B6B6179C6379004C7B0C /* popcorn_and_soda.png */; };
+		BB93B6BB179C64E0004C7B0C /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB93B6BA179C64E0004C7B0C /* Customer.m */; };
+		BB93B6BF179CA2E2004C7B0C /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = BB93B6BE179CA2E2004C7B0C /* Day.m */; };
 		BBDB828D179667A0009002AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDB828C179667A0009002AE /* QuartzCore.framework */; };
 		BBDB828F179667A0009002AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDB828E179667A0009002AE /* OpenGLES.framework */; };
 		BBDB8291179667A0009002AE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDB8290179667A0009002AE /* OpenAL.framework */; };
@@ -141,9 +151,30 @@
 		BBDB8433179667A2009002AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDB8432179667A2009002AE /* AppDelegate.m */; };
 		BBDB8436179667A2009002AE /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDB8435179667A2009002AE /* HelloWorldLayer.m */; };
 		BBDB8439179667A2009002AE /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDB8438179667A2009002AE /* IntroLayer.m */; };
+		BBDB844017966CE3009002AE /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDB843F17966CE3009002AE /* boy.png */; };
+		BBDB844317966E79009002AE /* GarageSaleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDB844217966E79009002AE /* GarageSaleLayer.m */; };
+		BBDB844717967A79009002AE /* boy_large.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDB844617967A79009002AE /* boy_large.png */; };
+		BBDB844917967AE1009002AE /* stone.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDB844817967AE1009002AE /* stone.png */; };
+		BBDB844B17967CA7009002AE /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDB844A17967CA7009002AE /* grass.png */; };
+		BBDB844D17967E4F009002AE /* blue_background.png in Resources */ = {isa = PBXBuildFile; fileRef = BBDB844C17967E4F009002AE /* blue_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0508AF179F9E92007C80CE /* DailySetupLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailySetupLayer.h; sourceTree = "<group>"; };
+		BB0508B0179F9E92007C80CE /* DailySetupLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailySetupLayer.m; sourceTree = "<group>"; };
+		BB8F88D817A390F100D68879 /* Rolling-Hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rolling-Hills.png"; sourceTree = "<group>"; };
+		BB8F88DA17A45F5E00D68879 /* EndOfDayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndOfDayLayer.h; sourceTree = "<group>"; };
+		BB8F88DB17A45F5E00D68879 /* EndOfDayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndOfDayLayer.m; sourceTree = "<group>"; };
+		BB93B6671797CB9F004C7B0C /* popcorn_stand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_stand.png; path = Resources/popcorn_stand.png; sourceTree = "<group>"; };
+		BB93B66B17990038004C7B0C /* main_scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_scene.png; path = Resources/main_scene.png; sourceTree = "<group>"; };
+		BB93B6B2179C6325004C7B0C /* popcorn_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_bubble.png; path = Resources/popcorn_bubble.png; sourceTree = "<group>"; };
+		BB93B6B3179C6325004C7B0C /* soda_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soda_bubble.png; path = Resources/soda_bubble.png; sourceTree = "<group>"; };
+		BB93B6B6179C6379004C7B0C /* popcorn_and_soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_and_soda.png; path = Resources/popcorn_and_soda.png; sourceTree = "<group>"; };
+		BB93B6B9179C64E0004C7B0C /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		BB93B6BA179C64E0004C7B0C /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		BB93B6BC179C6CA8004C7B0C /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		BB93B6BD179CA2E2004C7B0C /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
+		BB93B6BE179CA2E2004C7B0C /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
 		BBDB8289179667A0009002AE /* PopcornWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDB828C179667A0009002AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BBDB828E179667A0009002AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -425,6 +456,13 @@
 		BBDB8435179667A2009002AE /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		BBDB8437179667A2009002AE /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		BBDB8438179667A2009002AE /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		BBDB843F17966CE3009002AE /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boy.png; path = Resources/boy.png; sourceTree = "<group>"; };
+		BBDB844117966E79009002AE /* GarageSaleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarageSaleLayer.h; sourceTree = "<group>"; };
+		BBDB844217966E79009002AE /* GarageSaleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarageSaleLayer.m; sourceTree = "<group>"; };
+		BBDB844617967A79009002AE /* boy_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boy_large.png; sourceTree = "<group>"; };
+		BBDB844817967AE1009002AE /* stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone.png; sourceTree = "<group>"; };
+		BBDB844A17967CA7009002AE /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		BBDB844C17967E4F009002AE /* blue_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_background.png; path = Resources/blue_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,6 +486,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB93B6B8179C64CE004C7B0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB93B6B9179C64E0004C7B0C /* Customer.h */,
+				BB93B6BA179C64E0004C7B0C /* Customer.m */,
+				BB93B6BD179CA2E2004C7B0C /* Day.h */,
+				BB93B6BE179CA2E2004C7B0C /* Day.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BBDB8280179667A0009002AE = {
 			isa = PBXGroup;
 			children = (
@@ -485,12 +534,20 @@
 		BBDB82A0179667A0009002AE /* PopcornWarrior */ = {
 			isa = PBXGroup;
 			children = (
+				BB93B6B8179C64CE004C7B0C /* Models */,
 				BBDB8431179667A2009002AE /* AppDelegate.h */,
 				BBDB8432179667A2009002AE /* AppDelegate.m */,
 				BBDB8434179667A2009002AE /* HelloWorldLayer.h */,
 				BBDB8435179667A2009002AE /* HelloWorldLayer.m */,
 				BBDB8437179667A2009002AE /* IntroLayer.h */,
 				BBDB8438179667A2009002AE /* IntroLayer.m */,
+				BB0508AF179F9E92007C80CE /* DailySetupLayer.h */,
+				BB0508B0179F9E92007C80CE /* DailySetupLayer.m */,
+				BBDB844117966E79009002AE /* GarageSaleLayer.h */,
+				BBDB844217966E79009002AE /* GarageSaleLayer.m */,
+				BB8F88DA17A45F5E00D68879 /* EndOfDayLayer.h */,
+				BB8F88DB17A45F5E00D68879 /* EndOfDayLayer.m */,
+				BB93B6BC179C6CA8004C7B0C /* Weather.h */,
 				BBDB82A1179667A0009002AE /* Resources */,
 				BBDB82B9179667A0009002AE /* libs */,
 				BBDB842D179667A2009002AE /* Supporting Files */,
@@ -501,6 +558,17 @@
 		BBDB82A1179667A0009002AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB8F88D817A390F100D68879 /* Rolling-Hills.png */,
+				BB93B6B6179C6379004C7B0C /* popcorn_and_soda.png */,
+				BB93B6B2179C6325004C7B0C /* popcorn_bubble.png */,
+				BB93B6B3179C6325004C7B0C /* soda_bubble.png */,
+				BB93B66B17990038004C7B0C /* main_scene.png */,
+				BB93B6671797CB9F004C7B0C /* popcorn_stand.png */,
+				BBDB844C17967E4F009002AE /* blue_background.png */,
+				BBDB844A17967CA7009002AE /* grass.png */,
+				BBDB844817967AE1009002AE /* stone.png */,
+				BBDB844617967A79009002AE /* boy_large.png */,
+				BBDB843F17966CE3009002AE /* boy.png */,
 				BBDB82A2179667A0009002AE /* Default.png */,
 				BBDB82A4179667A0009002AE /* Default@2x.png */,
 				BBDB82A6179667A0009002AE /* Default-568h@2x.png */,
@@ -942,6 +1010,17 @@
 				BBDB82B5179667A0009002AE /* Icon@2x.png in Resources */,
 				BBDB82B8179667A0009002AE /* iTunesArtwork in Resources */,
 				BBDB8411179667A2009002AE /* ChangeLog in Resources */,
+				BBDB844017966CE3009002AE /* boy.png in Resources */,
+				BBDB844717967A79009002AE /* boy_large.png in Resources */,
+				BBDB844917967AE1009002AE /* stone.png in Resources */,
+				BBDB844B17967CA7009002AE /* grass.png in Resources */,
+				BBDB844D17967E4F009002AE /* blue_background.png in Resources */,
+				BB93B6681797CB9F004C7B0C /* popcorn_stand.png in Resources */,
+				BB93B66C17990038004C7B0C /* main_scene.png in Resources */,
+				BB93B6B4179C6325004C7B0C /* popcorn_bubble.png in Resources */,
+				BB93B6B5179C6325004C7B0C /* soda_bubble.png in Resources */,
+				BB93B6B7179C6379004C7B0C /* popcorn_and_soda.png in Resources */,
+				BB8F88D917A390F100D68879 /* Rolling-Hills.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,6 +1143,11 @@
 				BBDB8433179667A2009002AE /* AppDelegate.m in Sources */,
 				BBDB8436179667A2009002AE /* HelloWorldLayer.m in Sources */,
 				BBDB8439179667A2009002AE /* IntroLayer.m in Sources */,
+				BBDB844317966E79009002AE /* GarageSaleLayer.m in Sources */,
+				BB93B6BB179C64E0004C7B0C /* Customer.m in Sources */,
+				BB93B6BF179CA2E2004C7B0C /* Day.m in Sources */,
+				BB0508B1179F9E92007C80CE /* DailySetupLayer.m in Sources */,
+				BB8F88DC17A45F5E00D68879 /* EndOfDayLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,6 +1253,7 @@
 				BBDB843E179667A2009002AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
