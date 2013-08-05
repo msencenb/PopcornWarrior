@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Weather.h"
-@class CCSprite, CCLayer, Day;
+@class CCSprite, CCLayer, Day, Weather;
 
 @protocol CustomerDelegate <NSObject>
 @optional
@@ -27,6 +27,6 @@
 -(void)addToLayer;
 -(void)runActionSequence;
 
-+(BOOL)shouldAddCustomerForWeather:(Weather)weather;
++(BOOL)shouldAddCustomerForWeather:(Weather *)weather;
 
 @end

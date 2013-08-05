@@ -31,24 +31,24 @@
 
 @interface GarageSaleLayer ()
 {
-    int _currentWeather;
     int _tagCount;
     int _currentHour;
 }
+@property(nonatomic,strong)Weather *currentWeather;
 @property(nonatomic,strong)Day *day;
 @property(nonatomic,strong)CCLabelTTF *clock;
 @end
 
 @implementation GarageSaleLayer
-@synthesize day = _day, popcornLabel = _popcornLabel, sodaLabel = _sodaLabel, revenueLabel = _revenueLabel, clock = _clock;
+@synthesize day = _day, popcornLabel = _popcornLabel, sodaLabel = _sodaLabel, revenueLabel = _revenueLabel, clock = _clock, currentWeather = _currentWeather;
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
-+(CCScene *)sceneWithPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice
++(CCScene *)sceneWithPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice withWeather:(Weather *)weather;
 {
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	GarageSaleLayer *layer = [GarageSaleLayer nodeWithPopcornPrice:popcornPrice withSodaPrice:sodaPrice];
+	GarageSaleLayer *layer = [GarageSaleLayer nodeWithPopcornPrice:popcornPrice withSodaPrice:sodaPrice withWeather:weather];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -113,21 +113,11 @@
     [self addChild:_revenueLabel];
 }
 
--(void)addWeather:(Weather)weather
+-(void)addWeatherSprites
 {
     CGSize size = [[CCDirector sharedDirector] winSize];
-    CCSprite *sprite = nil;
-    _currentWeather = weather;
-    switch (weather) {
-        case 0:
-            NSLog(@"Sunny day");
-            sprite = [CCSprite spriteWithFile:@"blue_background.png"];
-            break;
-            
-        default:
-            break;
-    }
-    sprite.position = ccp(size.width/2,size.height/2);
+    CCSprite *sprite = [CCSprite spriteWithFile:_currentWeather.backgroundImageName];
+    sprite.position = ccp(size.width/2,size.height-75);
     [self addChild:sprite];
 }
 
@@ -148,22 +138,23 @@
     
 }
 
-+(id)nodeWithPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice
++(id)nodeWithPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice withWeather:(Weather *)weather
 {
-    return [[[GarageSaleLayer alloc] initWithPopcornPrice:popcornPrice withSodaPrice:sodaPrice] autorelease];
+    return [[[GarageSaleLayer alloc] initWithPopcornPrice:popcornPrice withSodaPrice:sodaPrice withWeather:weather] autorelease];
 }
 
 
 
 // on "init" you need to initialize your instance
--(id) initWithPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice
+-(id) initWithPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice withWeather:(Weather *)weather
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
         _tagCount = 0;
-        _day = [[Day alloc] initWithLayer:self withPopcornPrice:popcornPrice withSodaPrice:sodaPrice];
-        [self addWeather:kSunny];
+        _currentWeather = weather;
+        _day = [[Day alloc] initWithLayer:self withPopcornPrice:popcornPrice withSodaPrice:sodaPrice withWeather:_currentWeather];
+        [self addWeatherSprites];
         [self addSceneryAndMe];
         [self createDailyStatusLabels];
         [self addClock];

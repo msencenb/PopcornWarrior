@@ -2,18 +2,23 @@
 //  Weather.h
 //  PopcornWarrior
 //
-//  Created by Matt Sencenbaugh on 7/21/13.
+//  Created by Matt Sencenbaugh on 8/4/13.
 //  Copyright (c) 2013 Matt Sencenbaugh. All rights reserved.
 //
 
-#ifndef PopcornWarrior_Weather_h
-#define PopcornWarrior_Weather_h
+//Weather needs to be 
 
-typedef enum {
-    kSunny,
-    kBlisteringHot,
-    kRainy,
-    kFreakSnowstorm
-} Weather;
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
 
-#endif
+
+@interface Weather : NSObject
+
+@property(nonatomic,strong)NSString *readableForecast;
+@property(nonatomic,strong)NSString *backgroundImageName;
+@property(nonatomic,assign)int addCustomerRatio;
+//Need ratios and what not
+
++(Weather *)getRandomWeather;
+
+@end

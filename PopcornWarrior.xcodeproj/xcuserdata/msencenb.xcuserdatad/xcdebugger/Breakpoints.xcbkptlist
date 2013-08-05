@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/GarageSaleLayer.m"
-         timestampString = "396649361.139175"
+         timestampString = "397362345.400837"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "166"
-         endingLineNumber = "166"
-         landmarkName = "-initWithPopcornPrice:withSodaPrice:"
+         startingLineNumber = "157"
+         endingLineNumber = "157"
+         landmarkName = "-initWithPopcornPrice:withSodaPrice:withWeather:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/GarageSaleLayer.m"
-         timestampString = "396651375.466797"
+         timestampString = "397362345.400837"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "204"
-         endingLineNumber = "204"
+         startingLineNumber = "195"
+         endingLineNumber = "195"
          landmarkName = "-addCustomer:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/Customer.m"
-         timestampString = "396165778.036876"
+         timestampString = "397362345.400837"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "36"
-         endingLineNumber = "36"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
          landmarkName = "-initWithTag:withLayer:withDay:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/Customer.m"
-         timestampString = "396165778.036876"
+         timestampString = "397362345.400837"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "96"
-         endingLineNumber = "96"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
          landmarkName = "-unpauseQueuedNode:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/Customer.m"
-         timestampString = "396200704.41053"
+         timestampString = "397362345.400837"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "135"
-         endingLineNumber = "135"
+         startingLineNumber = "136"
+         endingLineNumber = "136"
          landmarkName = "-determinePurchases"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/Customer.m"
-         timestampString = "396165778.036876"
+         timestampString = "397362345.400837"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-unpauseQueuedNode:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/DailySetupLayer.m"
-         timestampString = "396591822.185111"
+         timestampString = "397370758.450382"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
          landmarkName = "+scene"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/DailySetupLayer.m"
-         timestampString = "396591822.185111"
+         timestampString = "397370758.450382"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "24"
-         endingLineNumber = "24"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "+scene"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,12 +112,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PopcornWarrior/DailySetupLayer.m"
-         timestampString = "396595522.296099"
+         timestampString = "397370758.450382"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "122"
+         endingLineNumber = "122"
+         landmarkName = "-init"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PopcornWarrior/GarageSaleLayer.m"
+         timestampString = "397369778.141899"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "118"
          endingLineNumber = "118"
-         landmarkName = "-init"
+         landmarkName = "-addWeatherSprites"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -9,16 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "Customer.h"
 
-@class GarageSaleLayer;
+@class GarageSaleLayer, Weather;
 @interface Day : NSObject<CustomerDelegate>
 
--(id)initWithLayer:(GarageSaleLayer *)layer withPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice;
+-(id)initWithLayer:(GarageSaleLayer *)layer withPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice withWeather:(Weather *)weather;
 
 @property(nonatomic,strong)NSDecimalNumber *popcornPrice;
 @property(nonatomic,strong)NSDecimalNumber *sodaPrice;
 
 @property(nonatomic,strong)NSDecimalNumber *popcornSold;
 @property(nonatomic,strong)NSDecimalNumber *sodaSold;
+
+@property(nonatomic,strong)Weather *weather;
 
 -(NSDecimalNumber *)revenue;
 

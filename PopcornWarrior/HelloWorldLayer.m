@@ -44,7 +44,7 @@
 	if( (self=[super init]) ) {
 		
 		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Popcorn Warrior" fontName:@"Helvetica-Bold" fontSize:64];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Popcorn Warrior" fontName:@"Helvetica-Bold" fontSize:40];
 
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];

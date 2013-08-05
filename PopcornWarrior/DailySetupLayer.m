@@ -8,16 +8,19 @@
 
 #import "DailySetupLayer.h"
 #import "GarageSaleLayer.h"
+#import "Weather.h"
+
 @interface DailySetupLayer ()
 {
 }
 @property(nonatomic,strong)NSDecimalNumber *sodaPrice;
 @property(nonatomic,strong)NSDecimalNumber *popcornPrice;
+@property(nonatomic,strong)Weather *weather;
 @end
 
 
 @implementation DailySetupLayer
-@synthesize sodaPrice = _sodaPrice, popcornPrice = _popcornPrice;
+@synthesize sodaPrice = _sodaPrice, popcornPrice = _popcornPrice, weather = _weather;
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
@@ -38,7 +41,7 @@
     CGSize size = [[CCDirector sharedDirector] winSize];
     CCMenuItem *start = [CCMenuItemFont itemWithString:@"Start" block:^(id sender){
         NSLog(@"Startgame pressed");
-        [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[GarageSaleLayer sceneWithPopcornPrice:self.popcornPrice withSodaPrice:self.sodaPrice] ]];
+        [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[GarageSaleLayer sceneWithPopcornPrice:self.popcornPrice withSodaPrice:self.sodaPrice withWeather:self.weather] ]];
     }];
     
     CCMenu *menu = [CCMenu menuWithItems:start, nil];
@@ -104,8 +107,9 @@
 
 -(void)addWeatherForecast
 {
+    self.weather = [Weather getRandomWeather];
     CGSize size = [[CCDirector sharedDirector] winSize];
-    CCSprite *weather = [CCSprite spriteWithFile:@"Rolling-Hills.png"];
+    CCSprite *weather = [CCSprite spriteWithFile:self.weather.backgroundImageName];
     weather.position = ccp(size.width/2, size.height-75);
     [self addChild:weather];
 }

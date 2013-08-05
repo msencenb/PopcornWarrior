@@ -7,6 +7,7 @@
 //
 #import "GarageSaleLayer.h"
 #import "Day.h"
+#import "Weather.h"
 
 @interface Day()
 {
@@ -15,9 +16,9 @@
 @end
 
 @implementation Day
-@synthesize popcornPrice = _popcornPrice, sodaPrice = _sodaPrice, popcornSold = _popcornSold, sodaSold = _sodaSold;
+@synthesize popcornPrice = _popcornPrice, sodaPrice = _sodaPrice, popcornSold = _popcornSold, sodaSold = _sodaSold, weather = _weather;
 
--(id)initWithLayer:(GarageSaleLayer *)layer withPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice
+-(id)initWithLayer:(GarageSaleLayer *)layer withPopcornPrice:(NSDecimalNumber *)popcornPrice withSodaPrice:(NSDecimalNumber *)sodaPrice withWeather:(Weather *)weather
 {
     self = [super init];
     if (self) {
@@ -25,6 +26,7 @@
         self.sodaSold = [NSDecimalNumber zero];
         self.sodaPrice = sodaPrice;
         self.popcornPrice = popcornPrice;
+        self.weather = weather;
         _layer = layer;
     }
     return self;

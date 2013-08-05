@@ -17,6 +17,8 @@
 		BB93B6B7179C6379004C7B0C /* popcorn_and_soda.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93B6B6179C6379004C7B0C /* popcorn_and_soda.png */; };
 		BB93B6BB179C64E0004C7B0C /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB93B6BA179C64E0004C7B0C /* Customer.m */; };
 		BB93B6BF179CA2E2004C7B0C /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = BB93B6BE179CA2E2004C7B0C /* Day.m */; };
+		BBA924A117AF3855001DDAA5 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA924A017AF3855001DDAA5 /* Weather.m */; };
+		BBA924A317AF63C4001DDAA5 /* superhot_background.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA924A217AF63C4001DDAA5 /* superhot_background.png */; };
 		BBDB828D179667A0009002AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDB828C179667A0009002AE /* QuartzCore.framework */; };
 		BBDB828F179667A0009002AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDB828E179667A0009002AE /* OpenGLES.framework */; };
 		BBDB8291179667A0009002AE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDB8290179667A0009002AE /* OpenAL.framework */; };
@@ -172,9 +174,11 @@
 		BB93B6B6179C6379004C7B0C /* popcorn_and_soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popcorn_and_soda.png; path = Resources/popcorn_and_soda.png; sourceTree = "<group>"; };
 		BB93B6B9179C64E0004C7B0C /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
 		BB93B6BA179C64E0004C7B0C /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
-		BB93B6BC179C6CA8004C7B0C /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		BB93B6BD179CA2E2004C7B0C /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
 		BB93B6BE179CA2E2004C7B0C /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
+		BBA9249F17AF3855001DDAA5 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		BBA924A017AF3855001DDAA5 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		BBA924A217AF63C4001DDAA5 /* superhot_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = superhot_background.png; path = Resources/superhot_background.png; sourceTree = "<group>"; };
 		BBDB8289179667A0009002AE /* PopcornWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDB828C179667A0009002AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BBDB828E179667A0009002AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -493,6 +497,8 @@
 				BB93B6BA179C64E0004C7B0C /* Customer.m */,
 				BB93B6BD179CA2E2004C7B0C /* Day.h */,
 				BB93B6BE179CA2E2004C7B0C /* Day.m */,
+				BBA9249F17AF3855001DDAA5 /* Weather.h */,
+				BBA924A017AF3855001DDAA5 /* Weather.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -547,7 +553,6 @@
 				BBDB844217966E79009002AE /* GarageSaleLayer.m */,
 				BB8F88DA17A45F5E00D68879 /* EndOfDayLayer.h */,
 				BB8F88DB17A45F5E00D68879 /* EndOfDayLayer.m */,
-				BB93B6BC179C6CA8004C7B0C /* Weather.h */,
 				BBDB82A1179667A0009002AE /* Resources */,
 				BBDB82B9179667A0009002AE /* libs */,
 				BBDB842D179667A2009002AE /* Supporting Files */,
@@ -558,6 +563,7 @@
 		BBDB82A1179667A0009002AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BBA924A217AF63C4001DDAA5 /* superhot_background.png */,
 				BB8F88D817A390F100D68879 /* Rolling-Hills.png */,
 				BB93B6B6179C6379004C7B0C /* popcorn_and_soda.png */,
 				BB93B6B2179C6325004C7B0C /* popcorn_bubble.png */,
@@ -1021,6 +1027,7 @@
 				BB93B6B5179C6325004C7B0C /* soda_bubble.png in Resources */,
 				BB93B6B7179C6379004C7B0C /* popcorn_and_soda.png in Resources */,
 				BB8F88D917A390F100D68879 /* Rolling-Hills.png in Resources */,
+				BBA924A317AF63C4001DDAA5 /* superhot_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1148,6 +1155,7 @@
 				BB93B6BF179CA2E2004C7B0C /* Day.m in Sources */,
 				BB0508B1179F9E92007C80CE /* DailySetupLayer.m in Sources */,
 				BB8F88DC17A45F5E00D68879 /* EndOfDayLayer.m in Sources */,
+				BBA924A117AF3855001DDAA5 /* Weather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

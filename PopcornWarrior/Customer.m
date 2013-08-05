@@ -9,6 +9,7 @@
 #import "Customer.h"
 #import "cocos2d.h"
 #import "Day.h"
+#import "Weather.h"
 
 @interface Customer()
 {
@@ -22,9 +23,9 @@
 @implementation Customer
 @synthesize sprite = _sprite, spriteTag = _spriteTag, animationDuration = _animationDuration, delegate = _delegate;
 
-+(BOOL)shouldAddCustomerForWeather:(Weather)weather
++(BOOL)shouldAddCustomerForWeather:(Weather *)weather
 {
-    if (arc4random_uniform(75) % 2 == 0) {
+    if (arc4random_uniform(75) % weather.addCustomerRatio == 0) {
         return YES;
     } else {
         return NO;
